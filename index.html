@@ -18,10 +18,11 @@
 	<link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+
 	<!-- Social Fixed Menu -->
 	<ul class="ct-socials">
 		<li>
-			<a href="https://github.com/julianaibiapina" target="_blank"><i class="fab fa-github"></i></a>
+			<a class="ct-socials-a" href="https://github.com/julianaibiapina" target="_blank"><i class="fab fa-github"></i></a>
 		</li>
 
 		<li>
@@ -36,8 +37,9 @@
 			<a href="https://www.instagram.com/juliana_ibiapina" target="_blank"><i class="fab fa-instagram"></i></a>
 		</li>
 	</ul>
+
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top my-bg-dark">
+	<nav class="navbar navbar-expand navbar-light fixed-top my-bg-dark">
 		<div class="container">
 		<a class="navbar-brand" href="#"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,81 +59,76 @@
 					<a class="nav-link" href="#">My story</a>
 				</li> -->
 				<li class="nav-item">
-					<a class="nav-link" href="#">Contact</a>
+					<a class="nav-link" href="#contact">Contact</a>
 				</li>
 			</ul>
 		</div>
 		</div>
 	</nav>
+
 	<!-- Welcome page -->
 	<header class="masthead my-bg-dark">
-		<div class="container h-100">
+		<div class="container h-100 box">
 			<div class="row h-100 align-items-center">
 				<div class="col-12 text-center text-white output" id="output">
-					<img class="rounded-circle" style="height: 200px; width: auto; margin-bottom: 20px;" src="assets/img/img-perfil.jpg">
-					<div class="d-flex justify-content-center align-items-center">
+					<!-- <img class="rounded-circle" style="height: 200px; width: auto; margin-bottom: 20px;" src="assets/img/img-perfil.jpg"> -->
+					<div class="d-flex justify-content-center align-items-center media-ajuste">
 						<img src="assets/img/hand.gif" style="height: 35px; width: auto; margin-bottom: 8px;" alt="Mão acenando">
 						<h1 class="font-weight-light cursor" id="header"></h1>
 					</div>
 					<p id="subheader"></p>
 				</div>
 			</div>
+			<!-- <a href="#section02"><span></span>Scroll</a> -->
+			<a href="#about_me" class="col-12 my-btn"><span></span></a>
+			
 		</div>
 	</header>
-  
-	<!-- Page About me -->
-	<div class="masthead my-bg-white">
-		<div class="container h-100" id="about_me">
-			<div class="content">
-				<div class="row">
-					<div class="col-sm-8">
-						<div class="d-flex align-items-center">
-							<!-- <img src="assets/img/stars.png" style="height: 30px; width: auto; margin-bottom: 8px;" alt="Mão acenando"> -->
-							<h2 class="font-weight-light">About me</h2>
-						</div>
+
+  	<!-- Page About me -->
+	<div class="min-alt my-bg-white d-flex justify-content-end align-items-center" id="about_me">
+		<div class="container content">
+			<div class="row">
+				<div class="col-lg d-flex justify-content-end align-items-center" style="margin-right: 60px;">
+					<img class="rounded-circle divShadow" style="height: 350px; width: auto; margin-bottom: 20px; margin-left: 60px;" src="assets/img/perfil-bg.jpg">
+				</div>
+	
+				<div class="col-lg flex-column justify-content-start align-items-center">
+					<h2 class="font-weight-light">Aboute Me</h2>
+					<p>Oi! Me chamo Juliana, sou uma mulher cristã, nordestina e apaixonada por tecnologia desde a adolescência.
+						Atualmente trabalho como desenvolvedora de software, lido com a construção de sistemas web, APIs e integração entre sistemas, utilizando principalmente tecnologias de back-end.
+						Também estou cursando o último semestre de Engenharia de Computação na Universidade Federal do Ceará, na cidade de Sobral, onde rediso.
+						Gosto de trabalhar em equipe, com metas bem definidas e de solucionar problemas.
+						Sou apaixonada pela minha profissão, pois vejo que a tecnologia é um meio de trazer desenvolvimento social e financeiro para o contexto no qual está incerida.
+					</p>
+
+					<div class="section-skills" style="margin-top: 50px;">
 						
-						<p>Oi! Me chamo Juliana, sou uma mulher cristã, nordestina e apaixonada por tecnologia desde a adolescência.
-							Atualmente trabalho como desenvolvedora de software, lido com a construção de sistemas web, APIs e integração entre sistemas, utilizando principalmente tecnologias de back-end.
-							Também estou cursando o último semestre de Engenharia de Computação na Universidade Federal do Ceará, na cidade de Sobral, onde rediso.
-							Gosto de trabalhar em equipe, com metas bem definidas e de solucionar problemas.
-							Sou apaixonada pela minha profissão, pois vejo que a tecnologia é um meio de trazer desenvolvimento social e financeiro para o contexto no qual está incerida.
-						</p>
-					</div>
-					<div class="col-sm-4">
-						<div class="d-flex align-items-center">
-							<!-- <img src="assets/img/smile.png" style="height: 30px; width: auto; margin-bottom: 8px;" alt="Mão acenando"> -->
-							<h2 class="font-weight-light">Main Stack</h2>
-						</div>
-						
+						<h2 class="font-weight-light">Main Stack</h2>
 						<small class="text-muted">Some of the main technologies that I use and study</small>
-						<div class="d-flex justify-content-center">
-							<ul class="skills">
+						<ul class="d-flex flex-wrap skills">
 								<li><i class="fab fa-php fa-3x"></i>PHP</li>
 								<li><i class="fas fa-database fa-3x"></i>MySQL</li>
 								<li><i class="fab fa-linux fa-3x"></i>Linux</li>
 								<li><i class="fab fa-git fa-3x"></i>Git</li>
-							</ul>
-		
-							<ul class="skills">
 								<li><i class="fab fa-python fa-3x"></i>Python</li>
 								<li><i class="fab fa-docker fa-3x"></i>Docker</li>
 								<li><i class="fab fa-css3-alt fa-3x"></i>CSS</li>
-							</ul>
-		
-							<ul class="skills">
 								<li><i class="fab fa-js-square fa-3x"></i>JavaScript</li>
 								<li><i class="fab fa-laravel fa-3x"></i>Laravel</li>
 								<li><i class="fab fa-bootstrap fa-3x"></i>Bootstrap</li>
-							</ul>
-						</div>
+						</ul>
 					</div>
 				</div>
+			</div>
+			<div class="row">
+				
 			</div>
 		</div>
 	</div>
 
 	<!-- Page Experience -->
-	<div class="my-bg-dark">
+	<div class="min-alt my-bg-dark">
 		<div class="container" id="experience">
 			<div class="content text-white">
 				<div class="align-self-center">
@@ -210,7 +207,7 @@
 								<div class="d-flex justify-content-between">
 									<span class="timeline-content-info-title">
 										<i class="fas fa-briefcase" aria-hidden="true"></i>
-										Scholarship holder 
+										Research Collaborator 
 									</span>
 									<span class="timeline-content-info-date">
 										<i class="far fa-calendar-alt" aria-hidden="true"></i>
@@ -238,23 +235,35 @@
 		</div>
 	</div>
 
-	<!-- Footer -->
-<footer class="page-footer font-small indigo my-bg-footer">
+	<!-- Social Contacts -->
+	<div class="contacts d-flex justify-content-center align-items-center text-white" id="contact">
+		<div class="row">
 
-	<div class="container text-center text-md-left" style="padding-top: 12px;">
-		<small id="emailHelp" class="form-text text-muted">"So whether you eat or drink or whatever you do, do it all for the glory of God." - 1 Corinthians 10:31</small>
-		<!-- <footer class="blockquote-footer">So whether you eat or drink or whatever you do, do it all for the glory of God. <cite title="Apostle Paul ">1 Coríntios 10:31</cite></footer> -->
+			<div class="d-flex justify-content-center align-items-center">
+				<i class="fas fa-mail-bulk fa-lg" style="margin-right: 8px;"></i>
+				<h2>Contact me</h2>
+			</div>
+			<p class="text-center">julianibiapina@alu.ufc.br</p>
+		</div>
 	</div>
+
+	<!-- Footer -->
+	<footer class="page-footer font-small indigo my-bg-footer">
+
+		<div class="container text-center text-md-left" style="padding-top: 12px;">
+			<small id="emailHelp" class="form-text text-muted">"So whether you eat or drink or whatever you do, do it all for the glory of God." - 1 Corinthians 10:31</small>
+			<!-- <footer class="blockquote-footer">So whether you eat or drink or whatever you do, do it all for the glory of God. <cite title="Apostle Paul ">1 Coríntios 10:31</cite></footer> -->
+		</div>
+		
 	
-  
-	<!-- Copyright -->
-	<div class="footer-copyright text-center py-3 text-white">Developed with ❤ by
-	  <a href="https://twitter.com/ibiapina_ju"> Juliana Ibiapina</a>
-	</div>
-	<!-- Copyright -->
-  
-</footer>
-<!-- Footer -->
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3 text-white">Developed with <i class="fas fa-heart"></i> by
+		<a href="https://twitter.com/ibiapina_ju" style="color: #7E57C2;"> Juliana Ibiapina</a>
+		</div>
+		<!-- Copyright -->
+	
+	</footer>
+	<!-- Footer -->
 
 
 	<!-- jQuery js file -->

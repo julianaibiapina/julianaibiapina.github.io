@@ -9,9 +9,15 @@ ul {
     padding: 0;
 }
 
+
 .masthead {
     height: 100vh;
     min-height: 500px;
+    
+}
+
+.min-alt{
+    min-height: 100vh;
 }
 
 .my-bg-dark{
@@ -46,12 +52,92 @@ ul {
     height: 100px;
     width: 100px;
 }
+
+.box{
+    position: relative;
+}
+.my-btn{ 
+
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .6s;
+    padding-top: 150px;
+}
+
+.my-btn span:hover {
+    border: 1.6px solid #9329D9;
+}
+      
+.my-btn span:hover::after{
+    border-left: 1.6px solid #9329D9;
+    border-bottom: 1.6px solid #9329D9;
+}
+
+.my-btn span{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 1.6px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    transition: all .6s;
+}
+
+.my-btn span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1.6px solid #fff;
+    border-bottom: 1.6px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    transition: all .6s;
+  }
+
+.divShadow{
+    box-shadow: 10px -10px #7E57C2;
+}
+
+.section-skills{
+    max-width: 600px;
+}
+
+/* Social section */
+
+.contacts{
+    background-color: #7E57C2;
+    height: 30vh;
+
   
+}
+
 /* console efect */
 .output {
-text-align:center;
-font-family: 'Source Code Pro', monospace;
-color:white;
+    text-align:center;
+    font-family: 'Source Code Pro', monospace;
+    color:white;
 }
 
 .output h1 {
@@ -138,12 +224,13 @@ color:white;
     float: right;
     padding-left: 5px;
 }
-.ct-socials li a:hover {
-    width: 54px;
-    padding-left: 0;
-    text-decoration: none;
-    background: #3c9bd9;
+
+@media only screen and (max-width: 760px) {
+    .media-ajuste{
+        flex-direction: column ;
+    }   
 }
+
 
 /* Timeline */
 #cd-timeline {
